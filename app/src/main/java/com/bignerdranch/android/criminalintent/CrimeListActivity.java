@@ -1,14 +1,10 @@
 package com.bignerdranch.android.criminalintent;
-/*
-* 3-20 0:20
-* Joe  第七章
-* */
-
 import android.support.v4.app.Fragment;
+/**
+ * Created by Admin on 2018/3/20.
+ */
 
-public class CrimeActivity extends SingleFragmentActivity {
-
-    @Override
+public class CrimeListActivity extends SingleFragmentActivity{
     protected Fragment createFragment(){
         return new CrimeFragment();
     }

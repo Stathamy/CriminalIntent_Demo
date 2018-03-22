@@ -33,7 +33,7 @@ public class CrimeFragment extends Fragment{
         View v=inflater.inflate(R.layout.fragment_crime,container,false);
         mTitleField =(EditText)v.findViewById(R.id.crime_title);
         mDateButton=(Button)v.findViewById(R.id.crime_date);
-        mDateButton.setText((CharSequence) mCrime.getDate().toString());
+        mDateButton.setText( mCrime.getDate().toString());
         mDateButton.setEnabled(false);
         mSolvedCheckBox=(CheckBox) v.findViewById(R.id.crime_solved);
         mSolvedCheckBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener(){
@@ -46,7 +46,7 @@ public class CrimeFragment extends Fragment{
         mTitleField.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(
-                    CharSequence charSequence, int i, int i1, int i2) {
+                    CharSequence s, int start, int count, int after) {
 
             }
             @Override

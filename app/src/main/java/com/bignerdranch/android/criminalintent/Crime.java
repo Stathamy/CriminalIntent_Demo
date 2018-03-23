@@ -12,6 +12,15 @@ public class Crime {
     private String mTitle;
     private Date mDate;
     private boolean mSolved;
+    private int mRequiresPolice;
+
+    public int getRequiresPolice() {
+        return mRequiresPolice;
+    }
+
+    public void setRequiresPolice(int requiresPolice) {
+        mRequiresPolice = requiresPolice;
+    }
 
     public void setTitle(String title) {
         mTitle = title;

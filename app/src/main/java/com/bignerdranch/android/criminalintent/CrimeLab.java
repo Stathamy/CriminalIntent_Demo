@@ -7,6 +7,7 @@ import java.util.UUID;
 
 /**
  * Created by Admin on 2018/3/20.
+ * 待优化：匹配crime ID的方法可以优化，使用...XX查找法
  */
 
 public class CrimeLab {
@@ -23,7 +24,6 @@ public class CrimeLab {
         for(int i=0;i<100;i++){
             Crime crime=new Crime();
             crime.setTitle("Crime #"+i);
-         //  if(i/2==0){ crime.setRequiresPolice(1);}
             crime.setSolved(i%2==0);
             mCrimes.add(crime);
         }
@@ -34,7 +34,7 @@ public class CrimeLab {
     public Crime getCrime(UUID id){
         for(Crime crime:mCrimes){
             if(crime.getId().equals(id)){
-                return crime;
+                return crime;//匹配crime ID的方法可以优化，使用...XX查找法
             }
         }
         return  null;

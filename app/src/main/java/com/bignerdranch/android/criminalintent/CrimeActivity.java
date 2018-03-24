@@ -26,6 +26,6 @@ public class CrimeActivity extends SingleFragmentActivity {
     public static Intent newIntent(Context packagecontext, UUID crimeId){
         Intent intent=new Intent(packagecontext,CrimeActivity.class);
         intent.putExtra(EXTRA_CRIME_ID,crimeId);
-        return intent;
+        return intent; 
     }
 }
